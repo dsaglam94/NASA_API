@@ -1,0 +1,12 @@
+{
+  "name": "nasa_api",
+  "version": "1.0.0",
+  "description": "It's a project to test NASA's API from #100devs agency.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Dogan Saglam (imDawn)",
+  "license": "ISC"
+}
