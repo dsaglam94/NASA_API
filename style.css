@@ -26,9 +26,10 @@ body {
 
 h1 {
     background-color: whitesmoke;
-    border: 5px solid black;
+    border: 3px solid black;
     padding: .1em 1em;
     font-weight: bold;
+    font-size: 1.5rem;
     margin-block: 1em;
     text-transform: uppercase;
 }
