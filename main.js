@@ -7,6 +7,7 @@ const date = document.querySelector('.date');
 const title = document.querySelector('.title');
 const copyRight = document.querySelector('.copyright');
 const paraEl = document.querySelector('.para');
+const iFrame = document.querySelector('iframe');
 // Event listeners
 document.getElementById('not_random').addEventListener('click', getImage);
 document.getElementById('random').addEventListener('click', getRandomImage);
@@ -68,7 +69,18 @@ async function fetchNasaRandom () {
     const response = await fetch(url);
     const data = await response.json();
 
-    document.querySelector('img').src = data.hdurl;
+    if ( data.media_type === 'video') {
+        iFrame.style.display = 'block';
+        iFrame.src = data.url;
+
+        document.querySelector('img').style.display = 'none';
+    } else if ( data.media_type === 'image') {
+        iFrame.style.display = 'none';
+        
+        document.querySelector('img').src = data.hdurl;
+        document.querySelector('img').style.display = 'block';
+    }
+
     date.textContent = data.date;
     title.textContent = data.title;
     copyRight.textContent = data.copyright;
@@ -87,7 +99,18 @@ async function fetchNasa () {
     const response = await fetch(url);
     const data = await response.json();
 
-    document.querySelector('img').src = data.hdurl;
+    if (data.media_type === 'video') {
+        iFrame.style.display = 'block';
+        iFrame.src = data.url;
+
+        document.querySelector('img').style.display = 'none';
+    } else if ( data.media_type === 'image') {
+        iFrame.style.display = 'none';
+        
+        document.querySelector('img').src = data.hdurl;
+        document.querySelector('img').style.display = 'block';
+    }
+
     date.textContent = data.date;
     title.textContent = data.title;
     copyRight.textContent = data.copyright;
