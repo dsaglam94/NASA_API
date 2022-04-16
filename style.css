@@ -10,7 +10,6 @@
 
 img, picture {
     width: 100%;
-    display: inline-block;
 }
 
 body {
@@ -60,9 +59,22 @@ h1 {
 }
 
 .img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 1100px;
     width: 100%;
     border: 5px solid whitesmoke;
+}
+
+iframe { 
+    display: none;
+    width: 100%;
+    aspect-ratio: 16 / 9; 
+}
+
+img {
+    display: block;
 }
 
 .text-container {
