@@ -50,9 +50,18 @@ h1 {
     padding: .5em 2em;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: .8rem;
+    font-size: .9rem;
     border-radius: 0;
     cursor: pointer;
+    background-color: white;
+    color: black;
+    outline: none;
+    border: none;
+}
+
+.input-field button:hover {
+    background-color: black;
+    color: white;
 }
 
 #random {
@@ -62,6 +71,12 @@ h1 {
 #ISS_btn a {
     text-decoration: none;
     color: black;
+    display: inline-block;
+    width: 100%;
+}
+
+#ISS_btn:hover a{
+    color: white;
 }
 
 .img-container {
@@ -121,6 +136,12 @@ img {
     width: 100%;
     background-color: whitesmoke;
 }
+
+/* ISS Map Style */
+#issMap {
+    height: 580px; 
+}
+
 
 @media (max-width: 768px) {
     h1 {

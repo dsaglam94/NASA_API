@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img, picture {
+    width: 100%;
+}
+
+body {
+    background-color: #ccc;
+    color: black;
+    min-height: 100vh;
+    padding: 2em;
+    text-align: center;
+}
+
+
+h1 {
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+p {
+    margin-bottom: 1em;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+p span {
+    color: darkred;
+}
+
+
+#issMap { 
+    height: 580px;
+    border: 3px solid black;
+}
+
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 1em;
+    color: black;
+    background-color: white;
+    padding: .7em 3em;
+    border-radius: .3rem;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: .8rem;
+    }
+}
