@@ -1,27 +1,31 @@
-[Click here for live site](https://dsaglam94.github.io/NASA_API/)
+<div align="center">
 
-# NASA_API
+  # NASA API
+  ## [Click Here](https://dsaglam94.github.io/NASA_API/) for live site
 
-## It is a simple-test project from #100devs to play with APIs and see the possibilties.
+  https://user-images.githubusercontent.com/98871279/171726252-8c2efac2-6237-48c8-ae9d-4090717d7297.mov
 
-### 21.04.2022 updated
 
-- Added a map function to show ISS satellite's position
-- Every 2s a new request is made to get the most recent position
-- The longitude and the latitude attached the map cords
-- added a ISS Satellite's icon
 
-> You can reach the API link from [this link](https://api.nasa.gov/)
-> Here is the Leaflet map [CDN](https://leafletjs.com/)
-> Grab the ISS Satellite API from [this link](https://wheretheiss.at/w/developer)
+</div>
+  
 
-Since the whole idea is to show beautiful pictures taken from NASA, I left UI very simple looking.
-But the functionality is not that simple.
 
-> Disclamer: The very first picture taken goes back to 1995-06-16. So keep that in mind if you enter earlier dates it won't work.
 
-- User can input a date
-- get a random image
-- localStorage
 
-> if it's the first time that user opens the website on their browser, the very first picture that gets uploaded will be the picture according to today's date. If not, the user's input date or random image date will be saved and relative picture will be shown the next time they open the site.
+## How it's made:
+<strong>Tech used:</strong> Vanilla CSS, Vanilla JavaScript and HTML
+
+This project uses the NASA's open API to fetch daily photos that had been taken since Jun 16, 1995. 
+
+  
+  
+## My different projects:
+
+Take a look at these couple of examples that I have in my portfolio:
+
+<strong>Crowd Web-App:</strong> https://github.com/dsaglam94/Crowd_reactApp_deploy
+
+<strong>myMovie:</strong> https://github.com/dsaglam94/SCSS_Responsive_Movie_API
+
+<strong>ESLCanvas:</strong> https://github.com/dsaglam94/imgCanvas_forESL
